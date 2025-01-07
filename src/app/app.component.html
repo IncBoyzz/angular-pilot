@@ -1,0 +1,106 @@
+<style>
+  :host {
+    --primary-blue: oklch(51.01% 0.274 263.83);
+    --secondary-violet: oklch(53.18% 0.28 296.97);
+    --gray-900: oklch(19.37% 0.006 300.98);
+    --gray-700: oklch(36.98% 0.014 302.71);
+    --gray-400: oklch(70.9% 0.015 304.04);
+
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--gray-400);
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-blue);
+    color: white;
+  }
+
+  .header .logo {
+    max-width: 3rem;
+    margin-right: 1rem;
+  }
+
+  .header .company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: calc(100vh - 4rem);
+  }
+
+  .welcome {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .welcome h1 {
+    font-size: 2.5rem;
+    color: var(--gray-900);
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .welcome p {
+    font-size: 1rem;
+    color: var(--gray-700);
+    margin: 0.5rem 0;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .feature {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .feature h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature p {
+    font-size: 0.875rem;
+    color: var(--gray-700);
+  }
+
+  @media screen and (max-width: 650px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
+
+
+
+<router-outlet>
+  <app-homepage>
+  </app-homepage>
+</router-outlet>
