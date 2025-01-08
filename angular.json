@@ -23,13 +23,22 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src",
+                "output": "/"
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/css/bootstrap.min.css",
+              "lib/owlcarousel/assets/owl.carousel.min.css",
+              "lib/animate/animate.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "lib/wow/wow.min.js",
+              "lib/easing/easing.min.js",
+              "lib/waypoints/waypoints.min.js",
+              "lib/owlcarousel/owl.carousel.min.js"
+            ]
           },
           "configurations": {
             "production": {
