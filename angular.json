@@ -34,10 +34,12 @@
               "lib/animate/animate.min.css"
             ],
             "scripts": [
+              "/node_modules/jquery/dist/jquery.min.js",
               "lib/wow/wow.min.js",
               "lib/easing/easing.min.js",
               "lib/waypoints/waypoints.min.js",
-              "lib/owlcarousel/owl.carousel.min.js"
+              "lib/owlcarousel/owl.carousel.min.js",
+              "js/main.js"
             ]
           },
           "configurations": {
@@ -45,7 +47,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
+                  "maximumWarning": "800kB",
                   "maximumError": "1MB"
                 },
                 {
