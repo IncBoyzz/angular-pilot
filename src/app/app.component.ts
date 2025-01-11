@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
-import { JQueryAjaxSettingsBase } from 'select2';
+
 
 @Component({
   selector: 'app-root',
